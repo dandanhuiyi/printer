@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>菜鸟打印</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://unpkg.com/vue"></script>
+    
+</head>
+<body>
+   <div id="app">
+    <div class="main">
+        <li v-on:click="initWebSocket">初始化</li>
+        <li v-on:click="findPrintCtrl">连接</li>
+        <li v-on:click="setPrinter">打印设置</li>        
+        <li v-on:click="print">打印</li>
+    </div>
+    <br/>
+    <p>{{message}}</p>
+   </div>   
+   <script src="main.js">  </script>
+</body>
+</html>

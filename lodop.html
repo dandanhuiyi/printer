@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lodop打印</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />    
+    <script src="http://127.0.0.1:8000/CLodopDemos/LodopFuncs.js"></script>
+    <script src="http://127.0.0.1:18000/CLodopDemos/LodopFuncs.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+   <div id="app">
+    <div class="main">
+        <li v-on:click="setTemplate">设置模板</li>
+        <li v-on:click="getTemplates">获取模板</li>     
+        <li v-on:click="printView">打印预览</li>  
+        <li v-on:click="print">打  印</li>
+    </div>
+    <br/>
+    <p>{{template}}</p>
+   </div>   
+   <script src="lodop.js"></script>
+</body>
+</html>
